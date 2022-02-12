@@ -1,18 +1,7 @@
-# Welcome to MkDocs
+# Bienvenue sur le site de la documentation du projet de la centrale météorologique - IMSP
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Visiter le site [meteo.imsp-uac.org](https://duamelo.github.io/centrale-IMSP/).
 
-## Commands
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-- Print help message and exit.
+## Contributeurs
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.

@@ -53,7 +53,7 @@ La fonction **parsevalue** prend le retour de la fonction **parseheader** qui es
 Elle nous renvoie une succession de fichiers.
 Chaque fichier représentant une colonne, chacune contenant la date, les données et l'id adéquate.
 
-### Module de décodage decode .c
+### Module de décodage decode.c
 
 Ce module est appelé dans le module de parsage à une étape bien précise.
 

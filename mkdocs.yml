@@ -1,9 +1,28 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
-site_name: My Docs
+site_name: centrale météorologique
 theme:
   name: material
+  features:
+    - navigation.sections
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+  palette:
+    accent: indigo
 
 extra_css:
   - stylesheets/extra.css
 extra_javascript:
   - javascripts/extra.js
+
+copyright: Copyright &copy; 2022 documentation centrale météorologique imsp 
+
+extra:
+  generator: false
+
+nav:
+    - Accueil: 'index.md'
+    - À propos: 'about.md'
+    - Module Decode: 'decode.md'
+    - Application: 'application.md'
+    
