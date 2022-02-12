@@ -7,6 +7,7 @@ theme:
     - navigation.instant
     - navigation.tracking
     - navigation.tabs
+    - navigation.indexes
   palette:
     accent: indigo
 
@@ -24,5 +25,9 @@ nav:
     - Accueil: 'index.md'
     - À propos: 'about.md'
     - Module Decode: 'decode.md'
-    - Application: 'application.md'
+    - Application:
+      - 'overview': 'application.md'
+      - 'table': 'table.md'
+      - 'capteur' : 'capteur.md'
+      - 'mesure' : 'mesure.md'
     
