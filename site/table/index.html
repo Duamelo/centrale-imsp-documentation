@@ -13,7 +13,7 @@
     
     
       
-        <title>overview - centrale météorologique</title>
+        <title>table - centrale météorologique</title>
       
     
     
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#presentation-de-lapplication-web-realisee" class="md-skip">
+        <a href="#presentation-de-la-page-liste-des-tables" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              overview
+              table
             
           </span>
         </div>
@@ -197,7 +197,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../application/" class="md-tabs__link md-tabs__link--active">
         Application
       </a>
     </li>
@@ -325,6 +325,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../application/" class="md-nav__link">
+        overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -337,12 +351,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          overview
+          table
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        overview
+        table
       </a>
       
         
@@ -361,8 +375,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#connexion" class="md-nav__link">
-    Connexion
+  <a href="#creer-les-utilisateurs" class="md-nav__link">
+    Créer les utilisateurs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#association" class="md-nav__link">
+    Association
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ajout-dune-table" class="md-nav__link">
+    Ajout d'une table
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tables-personnalisees" class="md-nav__link">
+    Tables personnalisées
   </a>
   
 </li>
@@ -371,20 +406,6 @@
   
 </nav>
       
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../table/" class="md-nav__link">
-        table
-      </a>
     </li>
   
 
@@ -451,8 +472,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#connexion" class="md-nav__link">
-    Connexion
+  <a href="#creer-les-utilisateurs" class="md-nav__link">
+    Créer les utilisateurs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#association" class="md-nav__link">
+    Association
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ajout-dune-table" class="md-nav__link">
+    Ajout d'une table
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tables-personnalisees" class="md-nav__link">
+    Tables personnalisées
   </a>
   
 </li>
@@ -470,23 +512,45 @@
               
                 
 
-<h1 id="presentation-de-lapplication-web-realisee">Présentation de l'application web réalisée</h1>
-<p>L'application consiste en un ensemble d'interfaces utilisateurs permettant entre autre de :</p>
+<h1 id="presentation-de-la-page-liste-des-tables">Présentation de la page <strong>Liste des tables</strong></h1>
+<h2 id="creer-les-utilisateurs">Créer les utilisateurs</h2>
+<p>L'administrateur du système crée tous les autres utilisateurs du système en cliquant sur le lien <strong>Créer un utilisateur</strong>.</p>
+<p><img alt="user register" src="/img/table/table8.png" /> </br>
+<em>Enregistrement d'un utilisateur.</em></p>
+<h2 id="association">Association</h2>
+<p>L'administrateur a la possibilité d'associer une table à un utilisateur du système, en cliquant sur le bouton <strong>Associer</strong>.</p>
+<p><img alt="Association" src="/img/table/table6.png" /> </br>
+<em>Modal d'association table-utilisateur</em></p>
+<h2 id="ajout-dune-table">Ajout d'une table</h2>
+<p>Selon les besoins des utilisateurs du système, l'adminitrateur peut ajouter une nouvelle table en renseignant certaines informations utiles en cliquant sur le bouton <strong>+</strong>.</p>
+<p><img alt="Ajout" src="/img/table/table7.png" /> </br>
+<em>Modal d'ajout d'une table</em></p>
+<h2 id="tables-personnalisees">Tables personnalisées</h2>
+<p><img alt="Authentification" src="/img/table/table1.png" /> </br>
+<em>Page des tables associées à l'utilisateur connecté.</em></p>
+<p>En cliquant sur un accordéon, vous pouvez consulter les informations d'une table</p>
+<p><img alt="Table météo" src="/img/table/table2.png" /> </br>
+<em>Information de la table météo associée à l'utilisateur franck.</em></p>
+<p>Vous avez la possibilité de : </p>
 <ul>
-<li>consulter les informations des différents capteurs;</li>
-<li>enregistrer un nouveau capteur;</li>
-<li>enregistrer un nouveau compte utilisateur;</li>
-<li>créer des tables personnalisées ( table météo par exemple);</li>
-<li>associer une table à un utilisateur donné;</li>
-<li>suppression et mise à jour des informations d'une table personnalisée;</li>
-<li>visualiser les opérations statisques d'une table sur une période donnée;</li>
+<li>mettre à jour la période de la table en renseignant une nouvelle valeur dans le champ appropré, suivi d'un click sur le bouton <strong>Mettre à jour</strong>*</li>
+<li>renseigner une nouvelle variable à la table avec une fonction associée.</li>
+<li>supprimer une variable de la table</li>
 </ul>
-<p>et une logique applicative.</p>
-<h2 id="connexion">Connexion</h2>
-<p>Vous renseignez votre email et mot de passe de connexion</p>
-<p><img alt="Authentification" src="/img/table/connexion.png" /> </br>
-<em>Page d'authentification.</em></p>
-<p>Si vos informations sont correctes, le système vous redirige vers la page de vos tables personnalisées</p>
+<p><img alt="Opération sur une table" src="/img/table/table3.png" /> </br>
+<em>Opération possible sur la table météo.</em></p>
+<p></br>
+</br>
+</br>
+</br></p>
+<p><img alt="enregistrement d'une sortie dans la table" src="/img/table/table4.png" /> </br>
+<em>Sélection d'une sortie.</em></p>
+<p></br>
+</br>
+</br>
+</br></p>
+<p><img alt="suppression de Ux" src="/img/table/table5.png" /> </br>
+<em>Suppression de la sortie Ux</em></p>
 
               
             </article>
@@ -500,7 +564,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../decode/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Module Decode" rel="prev">
+        <a href="../application/" class="md-footer__link md-footer__link--prev" aria-label="Previous: overview" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -509,20 +573,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Module Decode
+              overview
             </div>
           </div>
         </a>
       
       
         
-        <a href="../table/" class="md-footer__link md-footer__link--next" aria-label="Next: table" rel="next">
+        <a href="../capteur/" class="md-footer__link md-footer__link--next" aria-label="Next: capteur" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              table
+              capteur
             </div>
           </div>
           <div class="md-footer__button md-icon">
