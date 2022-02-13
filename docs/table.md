@@ -61,5 +61,5 @@ Vous avez la possibilité de :
 </br>
 </br>
 
-![suppression de Ux](/img/table/table5.png) </br>
+![suppression de Ux](img/table/table5.png) </br>
 *Suppression de la sortie Ux*
