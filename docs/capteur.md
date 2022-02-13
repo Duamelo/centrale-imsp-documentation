@@ -4,13 +4,13 @@
 
 Le système affiche la liste des capteurs existant sur la centrale
 
-![liste capteurs](/img/capteur/capteur1.png) </br>
+![liste capteurs](img/capteur/capteur1.png) </br>
 *Liste des capteurs.*
 
 </br>
 </br>
 
-![liste capteurs](/img/capteur/capteur2.png) </br>
+![liste capteurs](img/capteur/capteur2.png) </br>
 *Information détaillée sur les capteurs.*
 </br>
 
@@ -18,7 +18,7 @@ Le système affiche la liste des capteurs existant sur la centrale
 
 Après ajout d'un nouveau capteur à la centrale physique, nous pouvons renseigner ce nouveau capteur au système
 
-![enregistrement capteur](/img/capteur/capteur3.png) </br>
+![enregistrement capteur](img/capteur/capteur3.png) </br>
 *Enregistrement d'un nouveau capteur dans le système.*
 </br>
 
@@ -32,5 +32,5 @@ Afin d'enregistrement le nouveau capteur, vous devez éditer un fichier csv rens
 
 Soit :
 
-![capteur](/img/capteur/capteur4.png) </br>
+![capteur](img/capteur/capteur4.png) </br>
 *nom_capteur.csv.*
