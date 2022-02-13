@@ -18,7 +18,7 @@ et une logique applicative.
 
 Vous renseignez votre email et mot de passe de connexion
 
-![Authentification](/img/table/connexion.png) </br>
+![Authentification](img/table/connexion.png) </br>
 *Page d'authentification.*
 
 Si vos informations sont correctes, le système vous redirige vers la page de vos tables personnalisées
