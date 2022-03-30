@@ -549,25 +549,25 @@
                 
 
 <h1 id="presentation-du-module-de-decodage">Présentation du module de décodage</h1>
-<p>Ici, il s'agit de vous présenter globalement ce que nous avons fait dans cette partie du projet afin d'avoir les données brute dans un format lisible et exploitable.</p>
+<p>Ici, il s'agit de vous présenter globalement ce que nous avons fait dans cette partie du projet afin d'avoir les données brutes dans un format lisible et exploitable.</p>
 <h2 id="contexte">Contexte</h2>
-<p>Étant donné que les données brutes recueillies depuis la centrale sont dans un format hexadécimal (incompréhensible à première vue), il nous a fallu écrire un module de décodage dont le but est d'analyser le fichier brute de données et de transformer ces données hexadécimales en données ASCII.</p>
+<p>Étant donné que les données brutes recueillies depuis la centrale sont dans un format hexadécimal (incompréhensible à première vue), il nous a fallu écrire un module de décodage dont le but est d'analyser le fichier brut de données et de transformer ces données hexadécimales en données ASCII.</p>
 <h2 id="module-de-decodage-des-fichiers-brutes">Module de décodage des fichiers brutes</h2>
 <p>Ce module contient principalement deux sous-modules: </p>
 <ul>
 <li>Le module de parsage.</li>
-<li>Module de décodage proprement dit.</li>
+<li>Le module de décodage proprement dit.</li>
 </ul>
-<p>Après analyse des fichiers brutes, (vérification des répétitions, régularité, constituant de l'entête) contenant entre autre :</p>
+<p>Après analyse des fichiers bruts (vérification des répétitions, régularité, constituant de l'entête) contenant entre autres :</p>
 <ul>
-<li>entêtes (description de la table, heure d'enregistrement, information sur les colonne, soit les sorties des capteurs);</li>
-<li>données brutes mesurées;</li>
+<li>entêtes (description de la table, heure d'enregistrement, information sur les colonnes, soit les sorties des capteurs);</li>
+<li>données brutes mesurées;
+nous avons écrit le sous-module de parsage.</li>
 </ul>
-<p>nous avons écrit le sous-module de parsage.</p>
 <h3 id="module-de-parsage-parsec">Module de parsage parse.c</h3>
 <p>Ce module détecte l'entête, formate un certain nombre d'information, récupère les informations utiles au décodage même, c'est-à-dire :</p>
 <ul>
-<li>la description de la table (nom, date d'enegistement, fréquence, ...);</li>
+<li>la description de la table (nom, date d'enregistrement, fréquence, ...);</li>
 <li>la description d'une ligne d'enregistrement (nombre de colonne, type de chaque donnée par colonne, unité, ...).</li>
 </ul>
 <h4 id="utilite">Utilité</h4>
@@ -584,15 +584,13 @@
 <li>la taille totale d'un enregistrement;</li>
 <li>le nombre d'octet occupé par une colonne de l'enregistrement;</li>
 </ul>
-<p>ce qui nous permet de récupérer à chaque fois un enregistrement brute, de le parser et de le décoder en conséquence.</p>
-<p>Dans la partie description de la table, nous prenons la date et la fréquence d'enregistement. Avec la fonction <strong>arrondi_date</strong>, on arrondit la date dans le but d'avoir des temps d'enregistrement cohérents.</p>
+<p>ce qui nous permet de récupérer à chaque fois un enregistrement brut, de le parser et de le décoder en conséquence.</p>
+<p>Dans la partie description de la table, nous prenons la date et la fréquence d'enregistrement. Avec la fonction <strong>arrondi_date</strong>, on arrondit la date dans le but d'avoir des temps d'enregistrement cohérents.</p>
 <p>En utilisant la fréquence d'enregistrement, on incrémente le timestamp pour chaque enregistrement en utilisant la fonction <strong>increment_date</strong>.</p>
-<p>La fonction <strong>parsevalue</strong> prend le retour de la fonction <strong>parseheader</strong> qui est un tableau de structure...
-Elle nous renvoie une succession de fichiers.
-Chaque fichier représentant une colonne, chacune contenant la date, les données et l'id adéquate.</p>
+<p>La fonction parsevalue prend le retour de la fonction <strong>parseheader</strong> qui est un tableau de structure. Elle nous renvoie une succession de fichiers. Chaque fichier représentant une colonne, chacune contenant la date, les données et l'id adéquat.</p>
 <h3 id="module-de-decodage-decodec">Module de décodage decode.c</h3>
-<p>Ce module est appelé dans le module de parsage à une étape bien précise.</p>
-<p>On appelle ce module sur la chaîne de caractère que <strong>parsevalue</strong> à couper et cette chaine correspond à une colonne.</p>
+<p>Ce module est appelé dans le module de parsage à une étape bien précise.
+On appelle ce module sur la chaîne de caractère que <strong>parsevalue</strong> à couper et cette chaine correspond à une colonne.</p>
 
               
             </article>
